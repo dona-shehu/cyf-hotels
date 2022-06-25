@@ -11,7 +11,7 @@ const pool = new Pool({
         rejectUnauthorized: false
     } 
 })
-
+  
 app.get("/hotels", function (req, res) {
     pool.query('SELECT * FROM hotels')
         .then((result) => res.json(result.rows))
