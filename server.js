@@ -24,8 +24,8 @@ app.get("/hotels", function (req, res) {
             res.status(500).json(error);
         });
 });
-app.get("/products", function (req, res) {
-    pool.query('SELECT * FROM products')
+app.get("/customers", function (req, res) {
+    pool.query('SELECT * FROM customers')
         .then((result) => res.json(result.rows))
         .catch((error) => {
             console.error(error);
