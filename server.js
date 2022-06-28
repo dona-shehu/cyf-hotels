@@ -13,7 +13,7 @@ const pool = new Pool({
 })
 
 //run this comands in terminal
-  // export DATABASE_URL=postgres://codeyourfuture:donashehu@localhost:5432/cyf_hotels?sslmode=disable
+//export DATABASE_URL=postgres://codeyourfuture:donashehu@localhost:5432/cyf_hotels?sslmode=disable
 // PORT=9999 npm run start
 
 app.get("/hotels", function (req, res) {
